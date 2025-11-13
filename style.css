@@ -72,6 +72,14 @@ button {
         z-index: 0;
 }
 
+.section-header {
+        font-size: 28px;
+        letter-spacing: -4%;
+        line-height: 36px;
+        text-transform: uppercase;
+        font-weight: 700;
+}
+
 @media (min-width: 1200px) {
         .container {
                 max-width: 1300px;
@@ -89,6 +97,12 @@ button {
                 top: -60px;
                 height: 72px;
                 transform: translateX(-200px);
+        }
+
+        .section-header {
+                font-size: 44px;
+                line-height: 56px;
+                letter-spacing: -4%;
         }
 }
 
@@ -199,6 +213,8 @@ button {
         display: none;
 }
 
+
+
 @media (min-width: 1200px) {
         .header {
                 justify-content: flex-start;
@@ -276,13 +292,6 @@ button {
         gap: 33px;
         padding: 40px 0 60px 0;
 }
-
-/* 
-.hero-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-} */
 
 .hero-content {
         display: flex;
@@ -371,11 +380,7 @@ button {
 
 
 
-        .hero-header {
-                font-size: 60px;
-                line-height: 72px;
-                letter-spacing: -4%;
-        }
+        .hero-header {}
 
         .hero-text {
                 max-width: 562px;
@@ -417,12 +422,8 @@ button {
 }
 
 .numbers-header {
-        font-size: 28px;
-        letter-spacing: -4%;
-        line-height: 26px;
-        text-transform: uppercase;
+
         color: #000;
-        font-weight: 700;
 }
 
 .numbers-date {
@@ -474,12 +475,6 @@ button {
                 gap: 4px;
         }
 
-        .numbers-header {
-                font-size: 48px;
-                line-height: 56px;
-                letter-spacing: -4%;
-        }
-
         .numbers-list {
                 gap: 0px;
                 justify-content: space-between;
@@ -499,4 +494,44 @@ button {
                 font-size: 60px;
                 letter-spacing: -2%;
         }
+}
+
+/* == transactions == */
+
+.transactions {
+        padding: 48px 0 77px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+}
+
+.transactions-header {
+        color: var(--white)
+}
+
+.transactions-status {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -4%;
+        color: #35FF9E;
+        display: inline-flex;
+        align-items: center;
+}
+
+.transactions-status::before {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: currentColor;
+        margin-right: 4px;
+        flex: 0 0 auto;
+        vertical-align: middle;
+}
+
+.transactions-list {
+        display: flex;
+        overflow-x: auto;
 }
