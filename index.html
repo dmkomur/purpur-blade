@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trade Blade</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="container header">
+            <a href="#" class="logo">
+                <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./assets/logo-main-desktop.png"
+                        width="132"
+                        height="64"
+                    />
+                    <img
+                        src="./assets/logo-main-mobile.png"
+                        alt="logo Trade Blade"
+                        width="107"
+                        height="52"
+                    />
+                </picture>
+            </a>
+
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#">цифры</a></li>
+                    <li><a href="#">сделки онлайн</a></li>
+                    <li><a href="#">о компании</a></li>
+                    <li><a href="#">как начать</a></li>
+                    <li><a href="#">тарифы</a></li>
+                    <li><a href="#">отзывы</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="auth-desktop-wrapper">
+                <button class="auth-btn auth-btn-alternative auth-btn-desktop">
+                    войти
+                </button>
+                <button class="auth-btn auth-btn-desktop">регистрация</button>
+            </div>
+            <button class="burger-button">
+                <svg class="burger-button-icon" width="32" height="32">
+                    <use xlink:href="./assets/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <div class="header-sidebar">
+                <button class="close-button">
+                    <svg class="close-button-icon" width="32" height="32">
+                        <use xlink:href="./assets/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="nav-mobile">
+                    <ul class="nav-mobile-list">
+                        <li><a href="#">цифры</a></li>
+                        <li><a href="#">сделки онлайн</a></li>
+                        <li><a href="#">о компании</a></li>
+                        <li><a href="#">как начать</a></li>
+                        <li><a href="#">тарифы</a></li>
+                        <li><a href="#">отзывы</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-btns-wrapper">
+                    <button class="auth-btn">регистрация</button>
+                    <button class="auth-btn auth-btn-alternative">войти</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="container hero">
+            <picture class="hero-img">
+                <source
+                    media="(min-width: 768px)"
+                    srcset="
+                        ./assets/hero-desk1x.png 1x,
+                        ./assets/hero-desk2x.png 2x
+                    "
+                    sizes="(min-width: 768px) height:209px"
+                    width="469"
+                    height="209"
+                />
+                <img
+                    src="./assets/hero1x.png"
+                    srcset="./assets/hero1x.png 1x, ./assets/hero2x.png 2x"
+                    alt="data"
+                    width="300"
+                    height="134"
+                />
+            </picture>
+
+            <div class="hero-content">
+                <h1 class="hero-header">
+                    моментально Копируй сделки профи трейдеров
+                </h1>
+                <p class="hero-text">
+                    Начни копировать сделки с успешной командой профессиональных
+                    трейдеров в автоматическом режиме.
+                </p>
+                <form class="hero-form" action="subscibe">
+                    <input
+                        type="text"
+                        placeholder="Ваш e–mail"
+                        id="hero-email"
+                    />
+                    <button type="button" class="auth-btn hero-btn">
+                        начать
+                    </button>
+                </form>
+                <p class="hero-message">5 дней бесплатного пользования</p>
+            </div>
+        </div>
+        <script defer src="./index.js"></script>
+    </body>
+</html>
