@@ -531,7 +531,159 @@ button {
         vertical-align: middle;
 }
 
+
+
+.transactions-item {
+        width: 299px;
+        height: 208px;
+        position: relative;
+        background-color: var(--purpule);
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        border-radius: 4px;
+        padding: 16px;
+        clip-path: polygon(0% 0%,
+                        85% 0%,
+                        100% 20%,
+                        100% 100%,
+                        0% 100%);
+        overflow: hidden;
+
+}
+
 .transactions-list {
         display: flex;
         overflow-x: auto;
+        gap: 8px;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        padding-bottom: 22px;
+}
+
+.transactions-list::-webkit-scrollbar {
+        height: 6px;
+}
+
+.transactions-list::-webkit-scrollbar-track {
+        background: #1d243b;
+        border-radius: 4px;
+}
+
+.transactions-list::-webkit-scrollbar-thumb {
+        background-color: #6073a1;
+        border-radius: 4px;
+
+}
+
+.transactions-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+.transactions-item-logo {
+        object-fit: contain;
+        position: absolute;
+        right: -24px;
+        top: 10px;
+        width: 160px;
+        height: 160px;
+}
+
+.trasaction-item-data-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+}
+
+.trasaction-item-header-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2px
+}
+
+.transactions-item-header-title {
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--white);
+        text-transform: uppercase;
+        letter-spacing: -4%;
+        font-weight: 500;
+}
+
+.transactions-item-header-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #a698ff;
+        letter-spacing: -2%;
+}
+
+.transactions-item-profit-wrapper {
+        display: falex;
+        flex-direction: column;
+        gap: 2px
+}
+
+.transactions-item-profit-title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -2%;
+        color: #d2ccff;
+}
+
+.transactions-item-profit-text {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -2%;
+        color: #35FF9E;
+        display: inline-flex;
+        align-items: center;
+}
+
+.transactions-item-profit-text::after {
+        content: "↑";
+        display: inline-block;
+        color: #35FF9E;
+        font-size: 24px;
+        line-height: 1;
+}
+
+.transactions-item-target-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.transactions-item-target-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -2%;
+        color: #d2ccff;
+}
+
+.transactions-item-target-date {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -2%;
+        color: #a698ff;
+}
+
+@media (min-width: 1200px) {
+        .transactions {
+                padding: 96px 0 178px 0;
+                gap: 72px;
+        }
+
+        .transactions-list {
+                padding-bottom: 30px;
+                gap: 20px;
+        }
+
 }
