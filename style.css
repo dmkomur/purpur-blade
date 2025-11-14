@@ -1097,6 +1097,7 @@ button {
         background-color: #eaeff0;
         border-radius: 4px;
         transition: all 0.3s ease;
+
 }
 
 .faq-question {
@@ -1122,13 +1123,13 @@ button {
         overflow: hidden;
         transition: max-height 0.4s ease;
         line-height: 20px;
-        margin-top: 12px;
 }
 
 .faq-item.active-question .faq-answer {
         color: var(--white);
         max-height: 200px;
         transition: all 0.3s ease;
+        margin-top: 12px;
 
 }
 
