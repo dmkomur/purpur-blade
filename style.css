@@ -80,6 +80,7 @@ button {
         font-weight: 700;
 }
 
+
 @media (min-width: 1200px) {
         .container {
                 max-width: 1300px;
@@ -686,4 +687,365 @@ button {
                 gap: 20px;
         }
 
+}
+
+/* == about == */
+
+#about {
+        background: linear-gradient(to bottom,
+                        #ffffff 0%,
+                        #ffffff 75%,
+                        #000000 75px,
+                        #000000 100%);
+}
+
+.about-section {
+        padding: 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+}
+
+.about-header {
+        color: var(--dark-bg);
+
+}
+
+.about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+
+.about-content-text {
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--dark-bg);
+}
+
+.about-form {
+        padding: 16px;
+        border-radius: 4px;
+        background-color: var(--purpule);
+}
+
+.about-form-text {
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--white);
+        letter-spacing: -4%;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+#about-email {
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 4px;
+        background-color: #4a3bb2;
+        color: var(--white);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 8px;
+        border: none;
+}
+
+#about-email::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        letter-spacing: -1%;
+        color: #6c688b
+}
+
+@media (min-width: 1200px) {
+        #about {
+                background: var(--white);
+        }
+
+        .about-section {
+                padding: 56px 0 92px 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        .about-content {
+                gap: 40px;
+                max-width: 413px;
+        }
+
+        .about-form {
+                padding: 32px 68px 40px 64px;
+                max-width: 630px;
+        }
+
+        .about-form-text {
+                font-size: 28px;
+                line-height: 36px;
+                color: var(--white);
+                letter-spacing: -4%;
+                font-weight: 500;
+                text-align: center;
+                margin-bottom: 32px;
+        }
+
+        .about-form-wrapper {
+                display: block;
+                background-color: #4a3bb3;
+                border-radius: 4px;
+                margin-top: 12px;
+                padding: 4px;
+                position: relative;
+        }
+
+        .about-btn {
+                position: absolute;
+                right: 4px;
+                top: 4px;
+                color: var(--dark-bg);
+                line-height: 20px;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 16px 24px;
+                transition: all 0.3s ease;
+                width: auto;
+                transition: all 0.3s ease;
+        }
+
+        #about-email {
+                width: 100%;
+                padding: 16px 24px;
+                background-color: #4a3bb2;
+                border: none;
+                color: var(--white);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 0;
+        }
+
+        #about-email::placeholder {
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 500;
+                letter-spacing: -1%;
+                color: #6c688b
+        }
+
+        .about-btn:hover,
+        .about-btn:focus {
+                background-color: var(--purpule);
+                transition: all 0.3s ease;
+        }
+}
+
+
+
+
+
+/* == tariffs == */
+
+.tariffs {
+        padding-top: 56px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+}
+
+.tabs-control {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        padding: 4px;
+        border-radius: 4px;
+        background-color: var(--purpule);
+}
+
+.tab-btn {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        color: var(--blue-btn);
+        padding: 8px;
+        cursor: pointer;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+}
+
+.tab-btn-active {
+        background-color: var(--blue-btn);
+        border-radius: 4px;
+        color: #000;
+}
+
+.tab-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+}
+
+.card-standart {
+        border: 1px solid var(--purpule);
+        padding: 16px;
+        border-radius: 8px;
+}
+
+.card-vip {
+        background-color: var(--purpule)
+}
+
+.card-title {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+        color: var(--white);
+        margin-bottom: 24px;
+}
+
+.card-list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+}
+
+.card-list-item {
+        padding: 8px 20px;
+        border-bottom: 2px dashed #353946;
+        line-height: 20px;
+        color: var(--white);
+        position: relative;
+
+}
+
+.card-list-item::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        color: var(--white);
+        font-size: 14px;
+}
+
+.card-tariff {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 24px;
+}
+
+.card-tariff-price {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 4px;
+}
+
+.card-tariff-price-value {
+        font-size: 35px;
+        line-height: 40px;
+        font-weight: 500;
+        letter-spacing: -4%;
+        color: var(--white);
+}
+
+.card-tariff-price-discount {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 500;
+        letter-spacing: -4%;
+        color: #35FF9E;
+}
+
+.card-tariff-select {
+        background-color: #353946;
+        border-radius: 4px;
+        padding: 12px 24px;
+        color: var(--white);
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        transition: all 0.3s ease;
+        padding: 6px 24px 6px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+}
+
+.card-tariff-select::after {
+        content: "v";
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        color: var(--white);
+}
+
+.card-tariff-select-vip {
+        background-color: #8876ff;
+}
+
+.tariff-btn>span {
+        display: block;
+        font-size: 12px;
+        line-height: 16px;
+        color: #28677e;
+
+}
+
+@media (min-width: 1200px) {
+        .tariffs {
+                padding: 96px 227px;
+                display: flex;
+                flex-direction: column;
+                gap: 44px;
+        }
+
+        .tabs-control {
+                display: flex;
+                flex-direction: row;
+                gap: 2px;
+                padding: 4px;
+                border-radius: 4px;
+                background-color: var(--purpule);
+                max-width: 413px;
+        }
+
+        .tab-btn {
+                font-size: 24px;
+                line-height: 28px;
+                padding: 12px;
+        }
+
+        .tab-content {
+                flex-direction: row;
+                gap: 20px;
+        }
+
+        .card-title {
+                font-size: 32px;
+                line-height: 48px;
+        }
+
+        .card-tariff {
+                margin-top: auto;
+        }
+
+        .card-standart {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        }
 }

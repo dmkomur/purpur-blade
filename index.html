@@ -34,8 +34,8 @@
             <nav class="nav-desktop">
                 <ul>
                     <li><a href="#numbers">цифры</a></li>
-                    <li><a href="#">сделки онлайн</a></li>
-                    <li><a href="#">о компании</a></li>
+                    <li><a href="#transactions">сделки онлайн</a></li>
+                    <li><a href="#about">о компании</a></li>
                     <li><a href="#">как начать</a></li>
                     <li><a href="#">тарифы</a></li>
                     <li><a href="#">отзывы</a></li>
@@ -149,7 +149,7 @@
                 </ul>
             </div>
         </section>
-        <section class="transactions container">
+        <section class="transactions container" id="transactions">
             <div class="transactions-header-wrapper">
                 <h2 class="section-header transactions-header">
                     Прошедшие сделки
@@ -344,6 +344,190 @@
                     </div>
                 </li>
             </ul>
+        </section>
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <svg class="divider">
+                <use xlink:href="./assets/icons.svg#icon-divider"></use>
+            </svg>
+        </div>
+        <section id="about">
+            <div class="about-section container">
+                <div class="about-content">
+                    <h2 class="section-header about-header">О компании</h2>
+                    <p class="about-content-text">
+                        Мы опытная команда, для которой трейдинг – профессия.
+                        TradeBlade является авторизованным официальным брокером
+                        биржи Binance.
+                        <br />
+                        <br />
+                        Он представляет пользователям множество преимуществ,
+                        таких как более високая скорость синхронизации API и
+                        возможность создать учетную запись Binance через
+                        платформу TradeBlade всего в 1 клик.
+                    </p>
+                </div>
+                <div action="submit" class="about-form">
+                    <p class="about-form-text">
+                        Попробуйте сейчас и получите 5 дней бесплатного
+                        пользования
+                    </p>
+                    <form action="submit" class="about-form-wrapper">
+                        <input
+                            type="text"
+                            placeholder="Ваш e–mail"
+                            id="about-email"
+                        />
+                        <button type="button" class="auth-btn about-btn">
+                            попробовать
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="tariffs" class="container tariffs">
+            <h2 class="section-header">Тарифы</h2>
+            <div class="tabs-control">
+                <button class="tab-btn tab-btn-active" data-tab="spot">
+                    Спот
+                </button>
+                <button class="tab-btn" data-tab="futures">фьючерс</button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-content" id="spot">
+                    <div class="card-standart">
+                        <p class="card-title">STANDART</p>
+                        <ul class="card-list">
+                            <li class="card-list-item">Ручной трейдинг</li>
+                            <li class="card-list-item">
+                                Автоматическое или полуавтоматическое
+                                копирование сделок
+                            </li>
+                            <li class="card-list-item">
+                                Личный кабинет со статистикой
+                            </li>
+                            <li class="card-list-item">
+                                Среднесрочные сделки с уровнями набора портфеля
+                            </li>
+                        </ul>
+                        <div class="card-tariff">
+                            <div class="card-tariff-price">
+                                <p class="card-tariff-price-value">$234</p>
+                                <p class="card-tariff-price-discount">-35%</p>
+                            </div>
+                            <div class="card-tariff-select">12 месяцев</div>
+                        </div>
+                        <button class="auth-btn tariff-btn">
+                            Попробовать <span>5 дней бесплатно</span>
+                        </button>
+                    </div>
+                    <div class="card-standart card-vip">
+                        <div class="card-info-wrapper">
+                            <p class="card-title">VIP</p>
+                            <ul class="card-list">
+                                <li class="card-list-item">Ручной трейдинг</li>
+                                <li class="card-list-item">
+                                    Автоматическое или полуавтоматическое
+                                    копирование сделок
+                                </li>
+                                <li class="card-list-item">
+                                    Личный кабинет со статистикой
+                                </li>
+                                <li class="card-list-item">
+                                    Краткосрочные, среднесрочные и инвест сделки
+                                </li>
+                                <li class="card-list-item">
+                                    Доступ в Vip чат с командой
+                                </li>
+                                <li class="card-list-item">
+                                    Наш авторский курс по трейдингу
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-tariff">
+                            <div class="card-tariff-price">
+                                <p class="card-tariff-price-value">$234</p>
+                                <p class="card-tariff-price-discount">-35%</p>
+                            </div>
+                            <div
+                                class="card-tariff-select card-tariff-select-vip"
+                            >
+                                12 месяцев
+                            </div>
+                        </div>
+                        <button class="auth-btn tariff-btn">
+                            Попробовать <span>5 дней бесплатно</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tab-content" id="futures" style="display: none">
+                    <div class="card-standart">
+                        <p class="card-title">FUTURES STANDART</p>
+                        <ul class="card-list">
+                            <li class="card-list-item">Ручной трейдинг</li>
+                            <li class="card-list-item">
+                                Автоматическое или полуавтоматическое
+                                копирование сделок
+                            </li>
+                            <li class="card-list-item">
+                                Личный кабинет со статистикой
+                            </li>
+                            <li class="card-list-item">
+                                Среднесрочные сделки с уровнями набора портфеля
+                            </li>
+                        </ul>
+                        <div class="card-tariff">
+                            <div class="card-tariff-price">
+                                <p class="card-tariff-price-value">$234</p>
+                                <p class="card-tariff-price-discount">-35%</p>
+                            </div>
+                            <div class="card-tariff-select">12 месяцев</div>
+                        </div>
+                        <button class="auth-btn tariff-btn">
+                            Попробовать <span>5 дней бесплатно</span>
+                        </button>
+                    </div>
+                    <div class="card-standart card-vip">
+                        <p class="card-title">FUTURES VIP</p>
+                        <ul class="card-list">
+                            <li class="card-list-item">Ручной трейдинг</li>
+                            <li class="card-list-item">
+                                Автоматическое или полуавтоматическое
+                                копирование сделок
+                            </li>
+                            <li class="card-list-item">
+                                Личный кабинет со статистикой
+                            </li>
+                            <li class="card-list-item">
+                                Краткосрочные, среднесрочные и инвест сделки
+                            </li>
+                            <li class="card-list-item">
+                                Доступ в Vip чат с командой
+                            </li>
+                            <li class="card-list-item">
+                                Наш авторский курс по трейдингу
+                            </li>
+                        </ul>
+
+                        <div class="card-tariff">
+                            <div class="card-tariff-price">
+                                <p class="card-tariff-price-value">$234</p>
+                                <p class="card-tariff-price-discount">-35%</p>
+                            </div>
+                            <div
+                                class="card-tariff-select card-tariff-select-vip"
+                            >
+                                12 месяцев
+                            </div>
+                        </div>
+                        <button class="auth-btn tariff-btn">
+                            Попробовать <span>5 дней бесплатно</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <script defer src="./index.js"></script>
