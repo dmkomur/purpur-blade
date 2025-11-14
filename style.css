@@ -1157,3 +1157,99 @@ button {
                 line-height: 32px;
         }
 }
+
+/* == footer== */
+.footer {
+        border-bottom: 4px solid var(--purpule);
+
+}
+
+.footer-wrapper {
+        display: flex;
+        flex-direction: column;
+
+}
+
+.footer-nav {
+        display: flex;
+        flex-direction: row;
+        padding: 40px 0 57px 0;
+        border-bottom: 1px solid #4f515d;
+}
+
+.footer-nav-title {
+        font-size: 14px;
+        line-height: 20px;
+        color: #686a74;
+        text-transform: uppercase;
+        max-width: 107px;
+        text-align: start;
+        margin-right: 74px;
+}
+
+.footer-nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+}
+
+.footer-nav-item {
+        color: #acadb3;
+        font-size: 16px;
+        line-height: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+}
+
+.footer-nav-item:hover,
+.footer-nav-item:focus {
+        color: var(--purpule);
+        transition: all 0.3s ease;
+}
+
+.footer-logo-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 40px 0;
+        gap: 80px;
+        align-items: baseline;
+}
+
+.footer-logo-text {
+        color: #81838b;
+        line-height: 20px;
+}
+
+@media (min-width: 1200px) {
+        .footer-wrapper {
+                flex-direction: row;
+        }
+
+        .footer-nav {
+                display: flex;
+                flex-direction: column;
+                padding: 44px 0;
+                border-right: 1px solid #4f515d;
+                gap: 224px;
+        }
+
+        .footer-nav-list {
+                flex-direction: row;
+                gap: 24px;
+                padding-right: 217px;
+                margin-bottom: 0;
+        }
+
+        .footer-logo-wrapper {
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-grow: 1;
+                padding-bottom: 44px;
+        }
+
+        .footer-logo-text {
+                text-align: right;
+        }
+}
