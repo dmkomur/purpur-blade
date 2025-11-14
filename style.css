@@ -851,7 +851,7 @@ button {
 /* == tariffs == */
 
 .tariffs {
-        padding-top: 56px;
+        padding: 56px 0;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -981,6 +981,7 @@ button {
         justify-content: center;
         cursor: pointer;
         position: relative;
+        transition: all 0.3s ease;
 }
 
 .card-tariff-select::after {
@@ -1047,5 +1048,111 @@ button {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+        }
+
+        .tariff-btn {
+                transition: all;
+        }
+
+        .tariff-btn:hover,
+        .tariff-btn:focus {
+                background-color: var(--purpule);
+                transition: all 0.3s ease;
+        }
+
+        .card-tariff-select:hover,
+        .card-tariff-select:focus {
+                background-color: var(--blue-btn);
+                transition: all 0.3s ease;
+        }
+}
+
+/* == faq == */
+.faq {
+        padding-top: 56px;
+        padding-bottom: 54px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        color: var(--dark-bg);
+}
+
+#faq {
+        background-color: var(--white);
+}
+
+.faq-header {
+        color: #000;
+}
+
+.faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+}
+
+.faq-item {
+        padding: 16px;
+        cursor: pointer;
+        background-color: #eaeff0;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+}
+
+.faq-question {
+        position: relative;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+}
+
+.faq-question::after {
+        content: "^";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        color: #777b84;
+        transform: translateY(-50%) rotate(180deg);
+        transition: transform 0.3s;
+        transition: all 0.3s ease;
+}
+
+.faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        line-height: 20px;
+        margin-top: 12px;
+}
+
+.faq-item.active-question .faq-answer {
+        color: var(--white);
+        max-height: 200px;
+        transition: all 0.3s ease;
+
+}
+
+.faq-item.active-question .faq-question::after {
+        color: var(--white);
+        transform: translateY(-50%) rotate(0);
+        transition: all 0.3s ease;
+}
+
+.faq-item.active-question {
+        background-color: var(--purpule);
+        color: var(--white);
+        transition: all 0.3s ease;
+}
+
+@media (min-width: 1200px) {
+        .faq {
+                padding: 96px 227px;
+                display: flex;
+                gap: 64px;
+        }
+
+        .faq-question {
+                font-size: 24px;
+                line-height: 32px;
         }
 }

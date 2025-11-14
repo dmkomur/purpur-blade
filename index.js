@@ -23,3 +23,9 @@ tabButtons.forEach((btn) => {
         document.getElementById(tabId).style.display = "flex";
     });
 });
+
+document.querySelectorAll(".faq-item").forEach((item) => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("active-question");
+    });
+});
